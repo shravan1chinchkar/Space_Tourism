@@ -1,32 +1,31 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import "./Destination.css"
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Destination.css";
+import clsx from "clsx";
 
-
-const Destination_Navbar = () => {
+const Destination_Navbar = ({ activeName, setDestination, data }) => {
   return (
     <>
-    <nav className="rightnav">
-        <ul className="rightul"> 
-            <li className="rightli">
-                <NavLink  id="moon" className="rightnavlinks defaultrightnavlinkunderline" to="/destination">MOON</NavLink>
+      <nav className="rightnav">
+        <ul className="rightul">
+          {data.destinations.map((item, id) => (
+            <li className="rightli" key={id}>
+              <NavLink
+                id={item.name}
+                className={clsx(
+                  "rightnavlinks",
+                  activeName === item.name && "defaultrightnavlinkunderline"
+                )}
+                onClick={() => setDestination(data.destinations[id])}
+              >
+                {item.name}
+              </NavLink>
             </li>
-
-            <li className="rightli">
-                <NavLink id="mars"  className="rightnavlinks" to="/destination/mars">MARS</NavLink>
-            </li>
-
-            <li className="rightli">
-                <NavLink id="europa" className="rightnavlinks" to="/destination/europa">EUROPA</NavLink>
-            </li>
-                    
-            <li className="rightli">
-                <NavLink id="titan" className="rightnavlinks" to="/destination/titan">TITAN</NavLink>
-            </li>
+          ))}
         </ul>
-    </nav>
+      </nav>
     </>
-  )
-}
+  );
+};
 
-export default Destination_Navbar
+export default Destination_Navbar;
