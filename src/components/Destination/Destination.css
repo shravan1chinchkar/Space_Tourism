@@ -1,4 +1,4 @@
-body {
+.destination_body{
   width: 100vw;
   height: max-content;
   background-image: url("src/assets/destination/background-destination-desktop.jpg");
@@ -86,7 +86,7 @@ body {
   font-size: 1rem;
   font-family: var(--primary-font);
   letter-spacing: 2.7px;
-  text-transform: uppercase;
+  text-transform:uppercase;
 }
 .rightli {
   position: relative;
@@ -156,15 +156,15 @@ hr {
 /* media queries */
 
 @media screen and (max-width: 768px) {
-  .destination_body {
+  .destination_.destination_body {
     background-image: url("src/assets/destination/background-destination-tablet.jpg");
   }
-  header {
+  /* header {
     width: 90vw;
     height: 17px;
     left: 72px;
-  }
-  .line {
+  } */
+  /* .line {
     display: none;
   }
   .headernav {
@@ -177,7 +177,7 @@ hr {
   }
   .navlinks::before {
     content: " ";
-  }
+  } */
   .destination_main {
     flex-direction: column;
     gap: 2rem;
@@ -208,25 +208,25 @@ hr {
 }
 
 @media screen and (max-width: 375px) {
-  .destination_body {
+  .destination_.destination_body {
     background-image: url("src/assets/destination/background-destination-mobile.jpg");
   }
-  header {
+  /* header {
     width: 90vw;
     top: 20px;
     left: 20px;
-  }
-  .hamburger {
+  } */
+  /* .hamburger {
     display: block;
     width: 24px;
     height: 21px;
-  }
-  .line {
+  } */
+  /* .line {
     display: none;
   }
   .headernav {
     display: none;
-  }
+  } */
   .destination_main {
     margin: 2rem auto 3rem auto;
     gap: 2rem;

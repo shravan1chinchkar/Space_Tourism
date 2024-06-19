@@ -6,6 +6,7 @@ import data from "../../../public/data.json";
 
 const Destination = () => {
   const [destination, setDestination] = useState(data.destinations[0]);
+  console.log(destination);
 
   return (
     <>
@@ -32,7 +33,9 @@ const Destination = () => {
 
           {/* main cha right content */}
           <div className="rightcontent">
+
             <Destination_Navbar
+            // following line passes "moon"
               activeName={destination.name}
               setDestination={setDestination}
               data={data}

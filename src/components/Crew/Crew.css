@@ -1,0 +1,242 @@
+.crew_body{
+    width: 100vw;
+    height:100vh;
+    background-image: url("src/assets/crew/background-crew-desktop.jpg");
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.crew_main{
+    width: 80vw;
+    margin: 7rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.crew_left_right_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left section start here */
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.crew_heading{
+    display: flex;
+    gap: 20px;
+}
+.crew_heading_number{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size:1.5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.58);
+    font-family:var(--primary-font);
+}
+.crew_heading_text{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-family:var(--primary-font);
+}
+.crew_name{
+    margin-top: 10rem;
+    margin-bottom:1.5rem;
+}
+.crew_role{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #ffffff62;
+    font-family: var(--secondary-font);
+}
+.commander_name{
+    text-transform: uppercase;
+    font-size: 46px;
+    font-family: var(--secondary-font);
+    color: #ffffff;
+}
+.commander_name_2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: var(--secondary-font);
+    color: #ffffff;
+}
+.crew_description{
+    width: 444px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+    font-family: var(--primary-font);
+}
+.crew_description_2{
+    width: 444px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #D0D6F9;
+    font-family: var(--primary-font);
+}
+.circle{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+.a_circle{
+    width: 15px ;
+    height: 15px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.11);
+    cursor: pointer;
+}
+.a_circle:hover{
+    background-color:rgba(255, 255, 255, 0.306);
+}
+.a_circle_active{
+    background-color: white;
+}
+
+/* right section start here */
+.crew_image{
+    width: 468px;
+    height: 517px;
+}
+.crew_image_2{
+    width: 468px;
+    height: 517px;
+}
+.crew_image_img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.crew_image_img_2{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+}
+
+/* media queries */
+@media screen and (max-width:768px){
+    .crew_body{
+        background-image: url("src/assets/crew/background-crew-tablet.jpg");
+    }
+    /* header{
+        width: 90vw;
+        height: 16px;
+    }
+    .line{
+        display: none;
+    }
+    .headernav{
+        width: 450px;
+        height: 96px;
+    }
+    .logocontainer{
+        position:relative;
+        left: -40px;
+        top: 7px;
+    }
+    nav{
+        width: 73%;
+    }
+    .navul{
+        width: 356px;
+        height: 18px;
+    }
+    .navlinks::before{
+        content: " ";
+    } */
+    .crew_main{
+        width: 90vw;
+        flex-direction: column;
+        gap:0;
+        margin: 7rem auto 0 auto;
+    }
+    .left{
+        width: 100%;
+        height: max-content;
+        margin: auto;
+    }
+    .crew_left_right_content{
+        flex-direction: column;
+    }
+    .crew_role,.commander_name,.crew_description,.commander_name_2,.crew_description_2{
+        text-align: center;
+    }
+    .commander_name{
+        font-size: 30px;
+    }
+    .crew_name{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .crew_description,.crew_description_2{
+        width: 458px;
+        font-size: 18px;
+        line-height: 25px;
+        margin: auto;
+    }
+    .circle{
+        margin: 1rem auto 1rem auto;
+    }
+    .a_circle{
+        width: 10px;
+        height: 10px;
+    }
+    .right{
+        margin: 0 auto 0 auto;
+    }
+    .crew_image{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .crew_main{
+        margin-top: 0;
+        margin-bottom: 5rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .crew_heading{
+        margin: auto;
+    }
+    .crew_left_right_content{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .left{
+        flex-direction: column-reverse;
+    }
+    .crew_name{
+        margin-top: 1rem;
+    } 
+    .crew_role{
+        font-size: 16px;
+    }
+    .commander_name {
+        font-size: 24px;
+    }
+    .crew_description{
+        width: 100%;
+        font-size: 15px;
+    }
+    .right{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.477);
+    }
+    .crew_image{
+        width: 250px;
+        height: 250px;
+    }
+}

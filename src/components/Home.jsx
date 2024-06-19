@@ -33,9 +33,9 @@ const Home = () => {
         </main>
 
         {/* Footer Content */}
-        <footer className="home_footer">
+        {/* <footer className="home_footer">
             Copyright &copy Space Tour Technology Pvt Ltd.All Rights Reserved
-        </footer>
+        </footer> */}
     </div>
     </>
   );

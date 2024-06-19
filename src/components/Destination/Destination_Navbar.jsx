@@ -10,13 +10,7 @@ const Destination_Navbar = ({ activeName, setDestination, data }) => {
         <ul className="rightul">
           {data.destinations.map((item, id) => (
             <li className="rightli" key={id}>
-              <NavLink
-                id={item.name}
-                className={clsx(
-                  "rightnavlinks",
-                  activeName === item.name && "defaultrightnavlinkunderline"
-                )}
-                onClick={() => setDestination(data.destinations[id])}
+              <NavLink id={item.name} className={clsx("rightnavlinks", activeName === item.name &&"defaultrightnavlinkunderline" )} onClick={() => setDestination(data.destinations[id])}
               >
                 {item.name}
               </NavLink>
