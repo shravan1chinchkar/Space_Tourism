@@ -1,5 +1,5 @@
 import React from "react";
-import "./Technology.css";
+import "./Technology.css";1
 import clsx from "clsx";
 
 const Technology_Navbar = ({ isActive, settechnology, data }) => {

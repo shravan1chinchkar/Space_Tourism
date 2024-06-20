@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Home.css";
 import clsx from "clsx";
 
 const Verticle_Navbar = ({ display, setdisplay }) => {
-  const [listyle, setlistyle] = useState("verticleli")
   return (
     // hideverticlenavbar verticlenavbar
     <div className={clsx("hideverticlenavbar", display)}>

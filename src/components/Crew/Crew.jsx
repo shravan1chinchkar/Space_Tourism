@@ -58,7 +58,7 @@ const Crew = () => {
                   "crew_image_img",
                   crew.name === "Anousheh Ansari" && "crew_image_img_2"
                 )}
-                src={"src" + crew.images.png}
+                src={"../.." + crew.images.png}
                 alt="Douglas"
               />
             </div>

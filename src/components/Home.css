@@ -1,7 +1,7 @@
 .home_body {
     width: 100vw;
     height: 100vh;
-    background-image: url("public/assets/home/background-home-desktop.jpg");
+    background-image: url("../assets/home/background-home-desktop.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -227,7 +227,7 @@ ul li {
 @media screen and (max-width:768px) {
     .home_body {
         height: max-content;
-        background-image: url("public/assets/home/background-home-tablet.jpg");
+        background-image: url("../assets/home/background-home-tablet.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -309,7 +309,7 @@ ul li {
 /* media query for mobile */
 @media screen and (max-width:375px) {
     .home_body {
-        background-image: url("public/assets/home/background-home-mobile.jpg");
+        background-image: url("../assets/home/background-home-mobile.jpg");
     }
 
     header {
