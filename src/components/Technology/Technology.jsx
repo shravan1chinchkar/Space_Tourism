@@ -12,7 +12,6 @@ const Technology = () => {
     <div className="technology_body">
       <Header />
       <main className="technology_main">
-
         {/*   Tech Top Content */}
         <div className="technology_lefttop">
           <span className="technology_lefttop_number">03</span> Space Launch 101
@@ -20,7 +19,6 @@ const Technology = () => {
 
         {/* Tech bottom Content */}
         <div className="techbottommain">
-          
           {/* Technology Left Content */}
           <div className="technology_leftcontent">
             {/* Left bottom Content */}
@@ -39,12 +37,16 @@ const Technology = () => {
                 </div>
               </div>
             </div>
+            
           </div>
 
           {/* Technology Right Content */}
           <div className="technology_rightcontent">
-            
-            <img src={"src/" + technology.images.portrait} />
+            <img
+              src={`${
+                window.innerWidth > 768 ?"src/"+technology.images.portrait : "src/"+technology.images.landscape
+              }`}
+            />
           </div>
         </div>
       </main>

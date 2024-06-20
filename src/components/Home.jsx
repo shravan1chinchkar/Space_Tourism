@@ -31,11 +31,6 @@ const Home = () => {
             </button>
         </div>
         </main>
-
-        {/* Footer Content */}
-        {/* <footer className="home_footer">
-            Copyright &copy Space Tour Technology Pvt Ltd.All Rights Reserved
-        </footer> */}
     </div>
     </>
   );

@@ -124,16 +124,94 @@
 /* Media Queries start from here */
 @media screen and (max-width:768px) {
     .technology_body{
+        height: max-content;
         background-image: url("src/assets/technology/background-technology-tablet.jpg");
     }
     .technology_main{
-        margin: 1rem ;
-        flex-direction: column-reverse;
+        width: max-content;
+        margin:3rem 0 0 0 ;
+        flex-direction: column;
+    }
+    .technology_lefttop{
+        padding-left: 3rem;
     }
     .techbottommain{
+        margin-top: 3rem;
         flex-direction: column-reverse;
     }
-    .technology_rightcontent img{
-        src: url("");
+    .technology_rightcontent{
+        width:768px;
+        height: 310px;
     }
+    .technology_rightcontent img{
+        object-fit: cover;
+    }
+    .technology_leftbottom{
+        margin-top:3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .technology_navbar{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .technology_title{
+        font-size: 40px;
+    }
+    .technology_content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    .technology_description{
+        width: 537px;
+        line-height: 28px;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .technology_body{
+        background-image: url("src/assets/technology/background-technology-mobile.jpg");
+    }
+    .technology_main{
+        width: 100%;
+        height: max-content;
+        padding-bottom: 2rem;
+    }
+    .technology_lefttop{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .technology_nav_li{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .technology_title{
+        font-size: 24px;
+    }
+    .technology_rightcontent{
+        width:375px;
+        height: 170px;
+    }
+    .technology_leftcontent{
+        width: 100%;
+    }
+    .technology_content{
+        width: 100%;
+    }
+    .technology_description{
+        width: 327px;
+        text-align: center;
+        margin: auto;
+    }
+    
 }

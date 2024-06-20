@@ -1,6 +1,6 @@
 .destination_body{
   width: 100vw;
-  height: max-content;
+  height: 100vh;
   background-image: url("src/assets/destination/background-destination-desktop.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -159,25 +159,6 @@ hr {
   .destination_.destination_body {
     background-image: url("src/assets/destination/background-destination-tablet.jpg");
   }
-  /* header {
-    width: 90vw;
-    height: 17px;
-    left: 72px;
-  } */
-  /* .line {
-    display: none;
-  }
-  .headernav {
-    width: 450px;
-    height: 96px;
-  }
-  .navul {
-    width: 356px;
-    height: 18px;
-  }
-  .navlinks::before {
-    content: " ";
-  } */
   .destination_main {
     flex-direction: column;
     gap: 2rem;
@@ -211,22 +192,6 @@ hr {
   .destination_.destination_body {
     background-image: url("src/assets/destination/background-destination-mobile.jpg");
   }
-  /* header {
-    width: 90vw;
-    top: 20px;
-    left: 20px;
-  } */
-  /* .hamburger {
-    display: block;
-    width: 24px;
-    height: 21px;
-  } */
-  /* .line {
-    display: none;
-  }
-  .headernav {
-    display: none;
-  } */
   .destination_main {
     margin: 2rem auto 3rem auto;
     gap: 2rem;

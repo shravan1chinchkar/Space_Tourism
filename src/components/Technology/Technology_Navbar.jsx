@@ -19,15 +19,6 @@ const Technology_Navbar = ({ isActive, settechnology, data }) => {
             </li>
           );
         })}
-        {/* <li className="technology_nav_li">
-          <NavLink href="">1</NavLink>
-        </li>
-        <li className="technology_nav_li">
-          <NavLink href="">2</NavLink>
-        </li>
-        <li className="technology_nav_li">
-          <NavLink href="">3</NavLink>
-        </li> */}
       </ul>
     </div>
   );
