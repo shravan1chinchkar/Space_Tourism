@@ -4,6 +4,8 @@ import "./Destination.css";
 import Destination_Navbar from "./Destination_Navbar";
 import data from "../../../public/data.json";
 
+
+
 const Destination = () => {
   const [destination, setDestination] = useState(data.destinations[0]);
   console.log(destination);
@@ -23,7 +25,7 @@ const Destination = () => {
             <div className="leftbottom">
               <div className="mooncontainer">
                 <img
-                  src={"src" + destination.images.png}
+                  src={destination.images.png}
                   alt="moon"
                   className="dmoon"
                 />
