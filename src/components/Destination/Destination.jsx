@@ -23,7 +23,7 @@ const Destination = () => {
             <div className="leftbottom">
               <div className="mooncontainer">
                 <img
-                  src={"../.." + destination.images.png}
+                  src={"src" + destination.images.png}
                   alt="moon"
                   className="dmoon"
                 />
