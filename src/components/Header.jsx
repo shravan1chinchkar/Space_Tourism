@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Home.css";
 import Verticle_Navbar from "./Verticle_Navbar";
+import logo from "../assets/shared/logo.svg"
+import hamburger from "../assets/shared/icon-hamburger.svg"
 
 const Header = () => {
   const [display, setdisplay] = useState("hideverticlenavbar");
@@ -11,7 +13,7 @@ const Header = () => {
       {/* <!-- logo --> */}
       <div className="logocontainer">
         <img
-          src="../assets/shared/logo.svg"
+          src={logo}
           id="hamb"
           alt="logo"
           className="logo"
@@ -20,7 +22,7 @@ const Header = () => {
 
       {/* <!-- hamburbger icon --> */}
       <img
-        src="../assets/shared/icon-hamburger.svg"
+        src={hamburger}
         alt="hamburger"
         className="hamburger"
         onClick={() => setdisplay("verticlenavbar")}
