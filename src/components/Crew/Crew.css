@@ -1,7 +1,7 @@
 .crew_body{
     width: 100vw;
     height:100vh;
-    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    background-image: url("../../../assets/crew/background-crew-desktop.jpg");
     background-position: center center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -123,7 +123,7 @@
 /* media queries */
 @media screen and (max-width:768px){
     .crew_body{
-        background-image: url("../../assets/crew/background-crew-tablet.jpg");
+        background-image: url("../../../assets/crew/background-crew-tablet.jpg");
     }
     .crew_main{
         width: 90vw;
@@ -175,7 +175,7 @@
 
 @media screen and (max-width:375px){
     .crew_body{
-        background-image: url("../../assets/crew/background-crew-mobile.jpg");
+        background-image: url("../../../assets/crew/background-crew-mobile.jpg");
     }
     .crew_main{
         margin-top: 0;

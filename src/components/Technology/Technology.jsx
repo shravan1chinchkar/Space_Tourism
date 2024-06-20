@@ -43,7 +43,7 @@ const Technology = () => {
           <div className="technology_rightcontent">
             <img
               src={`${
-                window.innerWidth > 768 ?"../.."+technology.images.portrait : "../.."+technology.images.landscape
+                window.innerWidth > 768 ?technology.images.portrait :technology.images.landscape
               }`}
             />
           </div>
