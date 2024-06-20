@@ -3,7 +3,6 @@ import "./Technology.css";
 import Header from "../Header";
 import Technology_Navbar from "./Technology_Navbar";
 import data from "../../../public/data.json";
-import clsx from "clsx";
 
 const Technology = () => {
   const [technology, settechnology] = useState(data.technology[0]);

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Technology.css";
-import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 
 const Technology_Navbar = ({ isActive, settechnology, data }) => {

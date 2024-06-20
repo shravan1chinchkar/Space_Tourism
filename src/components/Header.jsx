@@ -11,7 +11,7 @@ const Header = () => {
       {/* <!-- logo --> */}
       <div className="logocontainer">
         <img
-          src="src/assets/shared/logo.svg"
+          src="public/assets/shared/logo.svg"
           id="hamb"
           alt="logo"
           className="logo"
@@ -20,7 +20,7 @@ const Header = () => {
 
       {/* <!-- hamburbger icon --> */}
       <img
-        src="src/assets/shared/icon-hamburger.svg"
+        src="public/assets/shared/icon-hamburger.svg"
         alt="hamburger"
         className="hamburger"
         onClick={() => setdisplay("verticlenavbar")}

@@ -1,7 +1,7 @@
 .destination_body{
   width: 100vw;
   height: 100vh;
-  background-image: url("src/assets/destination/background-destination-desktop.jpg");
+  background-image: url("public/assets/destination/background-destination-desktop.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,7 +157,7 @@ hr {
 
 @media screen and (max-width: 768px) {
   .destination_.destination_body {
-    background-image: url("src/assets/destination/background-destination-tablet.jpg");
+    background-image: url("public/assets/destination/background-destination-tablet.jpg");
   }
   .destination_main {
     flex-direction: column;
@@ -190,7 +190,7 @@ hr {
 
 @media screen and (max-width: 375px) {
   .destination_.destination_body {
-    background-image: url("src/assets/destination/background-destination-mobile.jpg");
+    background-image: url("public/assets/destination/background-destination-mobile.jpg");
   }
   .destination_main {
     margin: 2rem auto 3rem auto;

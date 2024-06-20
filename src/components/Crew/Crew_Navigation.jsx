@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Crew.css";
 import clsx from "clsx";
 import { NavLink } from "react-router-dom";
 
