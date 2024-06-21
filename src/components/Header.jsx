@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Home.css";
 import Verticle_Navbar from "./Verticle_Navbar";
-import logo from "../../assets/shared/logo.svg"
-import hamburger from "../../assets/shared/icon-hamburger.svg"
+import logo from "../../public/assets/shared/logo.svg"
+import hamburger from "../../public/assets/shared/icon-hamburger.svg"
 
 const Header = () => {
   const [display, setdisplay] = useState("hideverticlenavbar");
