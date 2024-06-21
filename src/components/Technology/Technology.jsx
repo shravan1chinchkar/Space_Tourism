@@ -48,6 +48,7 @@ const Technology = () => {
             />
           </div>
         </div>
+        
       </main>
     </div>
   );

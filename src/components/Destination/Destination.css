@@ -1,8 +1,8 @@
-.destination_body{
+.destination_body {
   width: 100vw;
   height: 100vh;
   /* src/assets/destination/background-destination-desktop.jpg" */
-  background-image: url("../../../assets/destination/background-destination-desktop.jpg");
+  background-image: url("/assets/destination/background-destination-desktop.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,6 +16,7 @@
   display: flex;
   gap: 10rem;
 }
+
 /* .destination_main cha leftcontent */
 .leftcontent {
   width: 50%;
@@ -23,11 +24,13 @@
   flex-direction: column;
   gap: 5rem;
 }
+
 /* leftcontent top */
 .lefttop {
   display: flex;
   gap: 0.5rem;
 }
+
 /* leftcontent top number */
 .leftnumber {
   text-transform: uppercase;
@@ -37,6 +40,7 @@
   color: rgba(255, 255, 255, 0.58);
   font-family: var(--primary-font);
 }
+
 /* leftcontent top text */
 .lefttext {
   text-transform: uppercase;
@@ -45,15 +49,18 @@
   color: rgb(255, 255, 255);
   font-family: var(--primary-font);
 }
+
 /* leftcontent bottom  */
 .leftbottom {
   display: flex;
   justify-content: center;
 }
+
 .mooncontainer {
   width: 445px;
   height: 445px;
 }
+
 .dmoon {
   width: 100%;
   height: 100%;
@@ -63,6 +70,7 @@
 .none {
   display: none;
 }
+
 .rightcontent {
   width: 50%;
   display: flex;
@@ -71,27 +79,32 @@
   gap: 2rem;
   padding-top: 4rem;
 }
+
 .rightnav {
   display: flex;
   width: 100%;
 }
+
 .rightul {
   width: 50%;
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
+
+.rightli {
+  position: relative;
+}
+
 .rightnavlinks {
   text-decoration: none;
   color: #d0d6f9;
   font-size: 1rem;
   font-family: var(--primary-font);
   letter-spacing: 2.7px;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
-.rightli {
-  position: relative;
-}
+
 .defaultrightnavlinkunderline::after {
   content: " ";
   position: absolute;
@@ -101,6 +114,7 @@
   height: 3.5px;
   background: rgb(255, 255, 255);
 }
+
 .rightnavlinks:hover::after {
   content: " ";
   position: absolute;
@@ -110,6 +124,7 @@
   height: 3.5px;
   background: rgba(255, 255, 255, 0.37);
 }
+
 .right_title {
   font-size: 80px;
   color: #ffffff;
@@ -117,6 +132,7 @@
   font-family: var(--secondary-font);
   text-transform: uppercase;
 }
+
 .rightdesc {
   width: 444px;
   font-size: 18px;
@@ -124,21 +140,25 @@
   color: #d0d6f9;
   font-family: var(--primary-font);
 }
+
 hr {
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.167);
 }
+
 .rightestimationbox {
   width: 100%;
   display: flex;
   gap: 5rem;
 }
+
 .traveltime,
 .avgdistance {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .traveltitle,
 .avgtitle {
   font-size: 14px;
@@ -146,6 +166,7 @@ hr {
   font-family: var(--primary-font);
   letter-spacing: 2.36px;
 }
+
 .travelnumber,
 .avgnumber {
   font-size: 28px;
@@ -158,81 +179,182 @@ hr {
 
 @media screen and (max-width: 768px) {
   .destination_.destination_body {
-    background-image: url("../../../assets/destination/background-destination-tablet.jpg");
+    background-image: url("/assets/destination/background-destination-tablet.jpg");
   }
+
   .destination_main {
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 2rem;
   }
+
   .leftcontent {
     width: 100%;
   }
+
   .rightcontent {
     width: 100%;
     align-items: center;
   }
+
   .rightnav {
     justify-content: center;
   }
+
   .right_title {
     text-align: center;
   }
+
   .rightdesc {
     width: 573px;
     font-size: 18px;
     line-height: 28px;
     text-align: center;
   }
+
   .rightestimationbox {
     justify-content: center;
   }
 }
 
+@media screen and (max-width:530px) {
+  .destination_main {
+    margin: 2rem auto;
+    gap: 0;
+  }
+
+  .mooncontainer {
+    width: 300px;
+    height: 300px;
+  }
+
+  .rightul {
+    width: 80%;
+  }
+
+  .rightdesc {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .rightnavlinks:hover::after {
+    background-color: white;
+
+  }
+}
+
 @media screen and (max-width: 375px) {
   .destination_.destination_body {
-    background-image: url("../../../assets/destination/background-destination-mobile.jpg");
+    background-image: url("/assets/destination/background-destination-mobile.jpg");
   }
+
   .destination_main {
     margin: 2rem auto 3rem auto;
     gap: 2rem;
   }
+
   .leftcontent {
     gap: 2rem;
+
+    .verticlenavbar {
+      width: 67vw;
+      height: 100vh;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: -42px;
+      backdrop-filter: blur(30px);
+      background-color: rgba(255, 255, 255, 0.075);
+    }
+
+    .verticleul {
+      margin-top: 10rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .dotverticleli {
+      list-style: none;
+    }
+
+    .verticleli {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      padding-left: 2rem;
+      letter-spacing: 5px;
+      cursor: pointer;
+      font-family: 'Barlow Condensed', sans-serif;
+      text-transform: uppercase;
+    }
+
+    .activeverticleli {
+      border-right: 8px solid white;
+
+    }
+
+    .verticlelia {
+      text-decoration: none;
+      color: white;
+    }
+
+    .verticlenumber {
+      font-weight: bold;
+    }
+
+    .cross {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: #D0D6F9;
+    }
   }
+
   .lefttop {
     justify-content: center;
   }
+
   .leftnumber,
   .lefttext {
     font-size: 1.2rem;
   }
+
   .mooncontainer {
     width: 170px;
     height: 170px;
   }
+
   .marscontainer {
     width: 170px;
     height: 170px;
   }
+
   .rightcontent {
     padding-top: 0;
   }
+
   .rightul {
     width: 90%;
   }
+
   .right_title {
     font-size: 56px;
   }
+
   .rightdesc {
-    width: 327px;
+    width: 100%;
     font-size: 15px;
   }
+
   .rightestimationbox {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
+
   .traveltitle,
   .avgtitle {
     font-size: 14px;
@@ -241,6 +363,7 @@ hr {
     letter-spacing: 2.36px;
     text-align: center;
   }
+
   .travelnumber,
   .avgnumber {
     font-size: 30px;
